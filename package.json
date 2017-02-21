@@ -1,0 +1,15 @@
+{
+  "name": "frontend_must_knows",
+  "version": "1.0.0",
+  "description": "technologies and interview questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "front-end",
+    "interview"
+  ],
+  "author": "xinyzhang9@gmail.com",
+  "license": "ISC"
+}
