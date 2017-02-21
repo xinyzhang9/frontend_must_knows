@@ -61,8 +61,14 @@ Answer:
 6. Deploy  
 7. Develop flow  
 8. Develop tool  
-
-#### 9. JS deep clone  
+#### 8. Flat arrays  
+Answer:  
+```
+var arr = [1,2,3,[4,[5,6],7]];
+const flatten = arr => arr.reduce((a,b)=> a.concat(Array.isArray(b)?flatten(b):b),[]);
+var result = flatten(arr);
+```
+#### 9. JS deep clone  
 Answer:  
 ```
 1. $.extend(true, target, object)
@@ -71,4 +77,11 @@ Answer:
 ```
 #### 10. JS design patten
 talk about later  
-#### 11. Image preview  
+#### 11. Image preview  
+See code at img_preview folder  
+#### 12. Drawbacks of Iframes  
+Answer:  
+1. Block onload events  
+2. Search engine cannot read iframes. Not good for SEO  
+3. iframes share connection-pool of index page and slows down the parallel loading of pages  
+4. Use javascript to dynamic assign src to avoid the above two problems.  
