@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>repaint</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var s = document.body.style;
+        var computed;
+        if (document.body.currentStyle) {
+          computed = document.body.currentStyle;
+        } else {
+          computed = document.defaultView.getComputedStyle(document.body, '');
+        }
+ 
+    function testOneByOne(){
+      s.color = 'red';;
+      tmp = computed.backgroundColor;
+      s.color = 'white';
+      tmp = computed.backgroundImage;
+      s.color = 'green';
+      tmp = computed.backgroundAttachment;
+    }
+    
+    function testAll() {
+      s.color = 'yellow';
+      s.color = 'pink';
+      s.color = 'blue';
+      
+      tmp = computed.backgroundColor;
+      tmp = computed.backgroundImage;
+      tmp = computed.backgroundAttachment;
+    }
+    </script>    
+    color test <br />
+    <button onclick="testOneByOne()">Test One by One</button>
+    <button onclick="testAll()">Test All</button>
+</body>
+</html>

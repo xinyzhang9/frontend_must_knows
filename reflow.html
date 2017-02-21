@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1
+/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+        var s = document.body.style;
+        var computed;
+        if (document.body.currentStyle) {
+          computed = document.body.currentStyle;
+        } else {
+          computed = document.defaultView.getComputedStyle(document.body, '');
+        }
+    function testOneByOne(){
+      s.color = 'red';
+      s.padding = '1px';
+      tmp = computed.backgroundColor;
+      s.color = 'white';
+      s.padding = '2px';
+      tmp = computed.backgroundImage;
+      s.color = 'green';
+      s.padding = '3px';
+      tmp = computed.backgroundAttachment;
+    }
+    
+    function testAll() {
+      s.color = 'yellow';
+      s.padding = '4px';
+      s.color = 'pink';
+      s.padding = '5px';
+      s.color = 'blue';
+      s.padding = '6px';
+      
+      tmp = computed.backgroundColor;
+      tmp = computed.backgroundImage;
+      tmp = computed.backgroundAttachment;
+    }
+    </script>    
+    color test <br />
+    <button onclick="testOneByOne()">Test One by One</button>
+    <button onclick="testAll()">Test All</button>
+</body>        
+</html>
