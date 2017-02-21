@@ -34,12 +34,13 @@ Answer:
 Answer:  
 [Article about repaint and reflow](http://www.css88.com/archives/4996)  
 1. change className directly. If to change css dynamicly, use cssText  
+2. Let DOMs do "offline" operation, then group-update at one time.  
+
 ```  
 el.style.cssText +=";
 left: "+left+"px;
 top: " +top+"px;";
 ```  
-2. Let DOMs do "offline" operation, then group-update at one time.  
 
 #### 6. JS cross control methods  
 Answer:  
