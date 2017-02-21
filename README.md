@@ -13,4 +13,15 @@ Answer:
 5. Speed up using CDN  
 6. Cache static resources  
 7. Lazy load images [Article about LazyLoad](http://www.jianshu.com/p/dc5fd46ff22c)
-
+#### 3. What happend from inputing url to page display completed?  
+Answer:  
+1. Browser starts looking for IP address  
+2. Details for DNS lookup: browser cache -> system cache -> router cache  
+3. Browser sends a HTTP request to web server  
+4. Web server 301 permanent redirect [Article about 301 redirect](http://www.ruanyifeng.com/notes/2007/08/301_redirect.html)  
+5. Browser track redirect address  
+6. Web server handles request  
+7. Webs server sends back a HTTP response  
+8. Browser displays HTML    
+9. Broswer send requests to fetch assests in HTML(images, sounds, videos, css, js)  
+10. Browser send async requests  
