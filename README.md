@@ -29,16 +29,18 @@ Answer:
 Answer:  
 1. HTTP Access control(CORS) [Article about CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)  
 2. Set HttpOnly in cofig  
+
 #### 5. How to optimize Repaint and Reflow of the browser  
 Answer:  
 [Article about repaint and reflow](http://www.css88.com/archives/4996)  
 1. change className directly. If to change css dynamicly, use cssText  
-```
+```  
 el.style.cssText +=";
 left: "+left+"px;
 top: " +top+"px;";
-```
+```  
 2. Let DOMs do "offline" operation, then group-update at one time.  
+
 #### 6. JS cross control methods  
 Answer:  
 1. jsonp  
