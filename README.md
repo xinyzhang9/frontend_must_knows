@@ -85,3 +85,12 @@ Answer:
 2. Search engine cannot read iframes. Not good for SEO  
 3. Iframes share connection-pool with index page and slows down the parallel loading of pages  
 4. Use javascript to dynamic assign src to avoid the above two problems.  
+
+## Advanced topics
+The folder frontend_advanced contains sample JS to demonstrate key topics such as execution context, variable hoisting, closure, this, and many to come.
+
+#### 1. Memory
+#### 2. Execution context
+#### 3. Variable hoisting
+#### 4. Closure
+#### 5. This
