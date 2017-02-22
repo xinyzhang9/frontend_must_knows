@@ -76,12 +76,12 @@ Answer:
 3. newobj = JSON.parse(JSON.stringify(sourceObj))
 ```
 #### 10. JS design patten
-talk about later  
+[read this book](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) 
 #### 11. Image preview  
 See code at img_preview folder  
 #### 12. Drawbacks of Iframes  
 Answer:  
 1. Block onload events  
 2. Search engine cannot read iframes. Not good for SEO  
-3. iframes share connection-pool of index page and slows down the parallel loading of pages  
+3. Iframes share connection-pool with index page and slows down the parallel loading of pages  
 4. Use javascript to dynamic assign src to avoid the above two problems.  
