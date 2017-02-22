@@ -12,3 +12,11 @@ function test(){
 
 var result = test();
 console.log(result);
+
+
+// innerTestEC = {
+// 	VO: {...},
+// 	scopeChain: [VO(innerTest), VO(test), VO(global)],
+// 	this: {}
+// }
+
