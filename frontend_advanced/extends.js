@@ -6,12 +6,12 @@ var Person = function(name, age){
 }
 
 // defind child constructor
-var Student = function(name,age,high){
+var Student = function(name,age,height){
 	Person.call(this,name,age);
-	this.high = high;
+	this.height = height;
 }
 Student.prototype.message = function(){
-	console.log('name:'+this.name+', age:'+this.age+', high:'+this.high+', gender:'+this.gender[0]+';');
+	console.log('name:'+this.name+', age:'+this.age+', height:'+this.height+', gender:'+this.gender[0]+';');
 }
 
 new Student('xinyang', 27, '176cm').message();
