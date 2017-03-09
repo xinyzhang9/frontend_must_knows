@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>setTimeout example</title>
+</head>
+<body>
+	<p id = 'p1'>
+		<input type = 'text' id = 'i1' value = ''>
+		<span id = 's1'></span>
+	</p>
+	<p id = 'p2'>
+		<input type = 'text' id = 'i2' value = ''>
+		<span id = 's2'></span>
+	</p>
+	<script type="text/javascript">
+		document.getElementById('i1').onkeydown = function(){
+			document.getElementById('s1').innerHTML = this.value;
+		}
+		document.getElementById('i2').onkeydown = function(){
+			setTimeout(function(){
+				document.getElementById('s2').innerHTML = document.getElementById('i2').value;
+			},0)
+		}
+	</script>
+</body>
+</html>
