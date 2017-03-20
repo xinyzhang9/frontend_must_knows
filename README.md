@@ -1,5 +1,5 @@
 # frontend_must_knows
-This is a collection of some common questions and techniques that front-end software developer must knows.
+This is a collection of some common questions and techniques that a front-end software developer must knows.
 
 ## Questions
 #### 1. A page contains two divs. Write css to keep the left div width fixed while the right div responsive to the window width.
